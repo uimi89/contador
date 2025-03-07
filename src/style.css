@@ -11,16 +11,38 @@ html,body{
 h1{
     display: flex;
     justify-content: center;
+    align-items: center;
 } 
 
-.button{
+h3{
     display: flex;
     justify-content: center;
+    align-items: center;
+} 
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_incremento{
+    background-color: #efe175e5;
+    color:#212121;
+}
+
+.button_decremento{
+    background-color: #75efc4e5;
+    color:#212121;
+}
+
+.button_reinicio{
+    background-color: #ef7575e5;
+    color:#212121;
 }
 
 button{
-    background-color: #efe175e5;
-    color:#212121;
+    margin:5px;
     height: 45px;
     width: 120px;
     border-radius: 25px;
