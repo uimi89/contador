@@ -5,12 +5,16 @@ export const Contador = ({valor}) => {
     const incrementar = () =>{
         setContador(contador + 1)
     }
-    const decremento = () =>{
-        setContador(contador - 1)
-    }
     const reinicio = () =>{
         setContador(valor)
     }
+    const handleClick = () => {
+        if (contador > valor) {
+            setContador(contador - 1)
+        } else {
+            alert("No es posible decrementar a números negativos");
+        }
+    };
     return (
         <>
             <h1>Contador</h1>
@@ -20,7 +24,7 @@ export const Contador = ({valor}) => {
                 <button className='button_incremento' onClick={incrementar}>
                     Incrementar
                 </button>
-                <button className='button_decremento' onClick={decremento}>
+                <button className='button_decremento' onClick={handleClick}>
                     Decremento
                 </button>
                 <button className='button_reinicio' onClick={reinicio}>

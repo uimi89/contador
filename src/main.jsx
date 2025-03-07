@@ -7,5 +7,5 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Contador valor={0}/>
-  </React.StrictMode>
+  </React.StrictMode> 
 );
